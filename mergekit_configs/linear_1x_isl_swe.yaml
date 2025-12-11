@@ -1,0 +1,12 @@
+dtype: float16
+merge_method: linear
+models:
+- model: liu-nlp/HyperLlama-180M-icelandic-1x
+  parameters:
+    weight: 1.0
+- model: liu-nlp/HyperLlama-180M-swedish-1x
+  parameters:
+    weight: 1.0
+parameters:
+  int8_mask: true
+  normalize: true

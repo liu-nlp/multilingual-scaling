@@ -1,0 +1,36 @@
+# Multilingual Scaling
+
+This repository contains and links to resources used in our paper "Grow Up and Merge: Scaling Strategies for Efficient Language Adaptation" ([citation](#citation)), such as model checkpoints, data, and configuration files for reproducing our work.
+
+<h4 align="center">
+    <p>
+        <a href="#checkpoints">Checkpoints</a> •
+        <a href="#petraining">Pretraining</a> •
+        <a href="#merging">Merging</a> •
+        <a href="#evaluation-datasets">Evaluation Datasets</a>
+    <p>
+</h4>
+
+## Checkpoints
+
+All checkpoints trained for our experiments can be found in the [Grow Up and Merge collection](https://huggingface.co/collections/liu-nlp/grow-up-and-merge) on the Hugging Face Hub.
+
+## Pretraining
+
+Our (continued) pre-training experiments were performed using our modified version of the [Nanotron framework](https://github.com/liu-nlp/nanotron). The configuration files can be found in the [`training_configs`](/training_configs) directory.
+
+### Training Data
+
+We computed the proportions of languages in our multilingual pre-training data mixture using our implementation of [UniMax sampling](https://arxiv.org/abs/2304.09151) which can be found [here](https://github.com/kgnlp/unimax).
+
+## Merging
+
+Our merging experiments were performed using [mergekit](https://github.com/arcee-ai/mergekit). All merges can be reproduced using the merge configuration files in the [`mergekit_configs`](/mergekit_configs) directory.
+
+## Evaluation Datasets
+
+The BLiMP evaluation dataset is available at  [liu-nlp/blimp-single-error](https://huggingface.co/datasets/liu-nlp/blimp-single-error), and the minimal-pair–style mParaRel dataset is available at [liu-nlp/minimal_pair_mpararel](https://huggingface.co/datasets/liu-nlp/minimal_pair_mpararel).
+
+# Citation
+
+**TODO**

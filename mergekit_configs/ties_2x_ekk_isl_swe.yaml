@@ -1,0 +1,19 @@
+base_model: liu-nlp/HyperLlama-572M-english-1x-cloned
+dtype: float16
+merge_method: ties
+models:
+- model: liu-nlp/HyperLlama-572M-icelandic-2x
+  parameters:
+    density: 0.5
+    weight: 1.0
+- model: liu-nlp/HyperLlama-572M-estonian-2x
+  parameters:
+    density: 0.5
+    weight: 1.0
+- model: liu-nlp/HyperLlama-572M-swedish-2x
+  parameters:
+    density: 0.5
+    weight: 1.0
+parameters:
+  int8_mask: true
+  normalize: true

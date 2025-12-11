@@ -1,0 +1,15 @@
+base_model: liu-nlp/HyperLlama-572M-english-1x-cloned
+dtype: float16
+merge_method: task_arithmetic
+models:
+- model: liu-nlp/HyperLlama-572M-faroese-1x-cloned
+  parameters:
+    density: 0.5
+    weight: 1.0
+- model: liu-nlp/HyperLlama-572M-icelandic-1x-cloned
+  parameters:
+    density: 0.5
+    weight: 1.0
+parameters:
+  int8_mask: true
+  normalize: true

@@ -1,0 +1,74 @@
+[
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/estonian_nanoset_train_shuffled",
+		"epochs": 4
+	},
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/random_sample_code_estonian_nanoset",
+		"epochs": 4
+	},
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/random_sample_initial_model_data_estonian_nanoset",
+		"epochs": 4
+	},
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/estonian_nanosets_train_shuffled_partial",
+		"epochs": 1
+	},
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/random_sample_code_estonian_nanoset_partial",
+		"epochs": 1
+	},
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/random_sample_initial_model_data_estonian_nanoset_partial",
+		"epochs": 1
+	},
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/faroese_nanoset_train_shuffled",
+		"epochs": 6
+	},
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/random_sample_code_faroese_nanoset",
+		"epochs": 6
+	},
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/random_sample_initial_model_data_faroese_nanoset",
+		"epochs": 6
+	},
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/icelandic_nanoset_train_shuffled",
+		"epochs": 6
+	},
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/random_sample_code_icelandic_nanoset",
+		"epochs": 6
+	},
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/random_sample_initial_model_data_icelandic_nanoset",
+		"epochs": 6
+	},
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/persian_nanoset_train_shuffled",
+		"epochs": 1
+	},
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/random_sample_code_persian_nanoset",
+		"epochs": 1
+	},
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/random_sample_initial_model_data_persian_nanoset",
+		"epochs": 1
+	},
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/swedish_nanoset_train",
+		"epochs": 1
+	},
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/random_sample_code_nanoset",
+		"epochs": 1
+	},
+	{
+		"path": "/proj/dl4nlp/datasets/fineweb2_nanosets/random_sample_initial_model_data_nanoset",
+		"epochs": 1
+	}
+]

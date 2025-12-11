@@ -1,0 +1,15 @@
+dtype: float16
+merge_method: multislerp
+models:
+- model: liu-nlp/HyperLlama-572M-estonian-1x-cloned
+  parameters:
+    weight: 1.0
+- model: liu-nlp/HyperLlama-572M-icelandic-1x-cloned
+  parameters:
+    weight: 1.0
+- model: liu-nlp/HyperLlama-572M-swedish-1x-cloned
+  parameters:
+    weight: 1.0
+parameters:
+  int8_mask: true
+  normalize: true

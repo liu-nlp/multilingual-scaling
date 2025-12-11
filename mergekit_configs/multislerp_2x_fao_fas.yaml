@@ -1,0 +1,12 @@
+dtype: float16
+merge_method: multislerp
+models:
+- model: liu-nlp/HyperLlama-572M-faroese-2x
+  parameters:
+    weight: 1.0
+- model: liu-nlp/HyperLlama-572M-persian-2x
+  parameters:
+    weight: 1.0
+parameters:
+  int8_mask: true
+  normalize: true

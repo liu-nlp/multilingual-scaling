@@ -1,0 +1,12 @@
+dtype: float16
+merge_method: linear
+models:
+- model: liu-nlp/HyperLlama-572M-estonian-1x-cloned
+  parameters:
+    weight: 1.0
+- model: liu-nlp/HyperLlama-572M-persian-1x-cloned
+  parameters:
+    weight: 1.0
+parameters:
+  int8_mask: true
+  normalize: true

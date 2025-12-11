@@ -1,0 +1,263 @@
+checkpoints:
+  checkpoint_interval: 250
+  checkpoints_path: checkpoints/HyperLlama-572M-icelandic-1x-cloned
+  checkpoints_path_is_shared_file_system: false
+  load_lr_scheduler: false
+  load_optimizer: false
+  resume_checkpoint_path: null
+  resume_metadata: false
+  save_final_state: true
+  save_initial_state: false
+data_stages:
+- data:
+    dataset:
+      dataset_folder:
+      - processed_datasets/icelandic_nanoset_train_shuffled
+      - processed_datasets/random_sample_initial_model_data_icelandic_nanoset
+      - processed_datasets/random_sample_code_icelandic_nanoset
+      dataset_max_tokens: null
+      dataset_num_samples:
+      - 2100119
+      - 36510
+      - 4155
+      dataset_weights:
+      - 2100119.0
+      - 36510.0
+      - 4155.0
+      drop_last: false
+      pad_samples_to_global_batch_size: true
+      return_positions: true
+      shuffle_files: true
+      skip_in_stream: false
+      token_size_in_bytes: 4
+      tokenizer_name: meta-llama/Llama-3.3-70B-Instruct
+      use_old_brrr_dataloader: false
+      vocab_size: 128256
+    num_loading_workers: 0
+    seed: 42
+  name: first epoch
+  start_training_step: 1
+- data:
+    dataset:
+      dataset_folder:
+      - processed_datasets/icelandic_nanoset_train_shuffled
+      - processed_datasets/random_sample_initial_model_data_icelandic_nanoset
+      - processed_datasets/random_sample_code_icelandic_nanoset
+      dataset_max_tokens: null
+      dataset_num_samples:
+      - 2100119
+      - 36510
+      - 4155
+      dataset_weights:
+      - 2100119.0
+      - 36510.0
+      - 4155.0
+      drop_last: false
+      pad_samples_to_global_batch_size: true
+      return_positions: true
+      shuffle_files: true
+      skip_in_stream: false
+      token_size_in_bytes: 4
+      tokenizer_name: meta-llama/Llama-3.3-70B-Instruct
+      use_old_brrr_dataloader: false
+      vocab_size: 128256
+    num_loading_workers: 0
+    seed: 137
+  name: second epoch
+  start_training_step: 420
+- data:
+    dataset:
+      dataset_folder:
+      - processed_datasets/icelandic_nanoset_train_shuffled
+      - processed_datasets/random_sample_initial_model_data_icelandic_nanoset
+      - processed_datasets/random_sample_code_icelandic_nanoset
+      dataset_max_tokens: null
+      dataset_num_samples:
+      - 2100119
+      - 36510
+      - 4155
+      dataset_weights:
+      - 2100119.0
+      - 36510.0
+      - 4155.0
+      drop_last: false
+      pad_samples_to_global_batch_size: true
+      return_positions: true
+      shuffle_files: true
+      skip_in_stream: false
+      token_size_in_bytes: 4
+      tokenizer_name: meta-llama/Llama-3.3-70B-Instruct
+      use_old_brrr_dataloader: false
+      vocab_size: 128256
+    num_loading_workers: 0
+    seed: 59
+  name: third epoch
+  start_training_step: 839
+- data:
+    dataset:
+      dataset_folder:
+      - processed_datasets/icelandic_nanoset_train_shuffled
+      - processed_datasets/random_sample_initial_model_data_icelandic_nanoset
+      - processed_datasets/random_sample_code_icelandic_nanoset
+      dataset_max_tokens: null
+      dataset_num_samples:
+      - 2100119
+      - 36510
+      - 4155
+      dataset_weights:
+      - 2100119.0
+      - 36510.0
+      - 4155.0
+      drop_last: false
+      pad_samples_to_global_batch_size: true
+      return_positions: true
+      shuffle_files: true
+      skip_in_stream: false
+      token_size_in_bytes: 4
+      tokenizer_name: meta-llama/Llama-3.3-70B-Instruct
+      use_old_brrr_dataloader: false
+      vocab_size: 128256
+    num_loading_workers: 0
+    seed: 888
+  name: fourth epoch
+  start_training_step: 1258
+- data:
+    dataset:
+      dataset_folder:
+      - processed_datasets/icelandic_nanoset_train_shuffled
+      - processed_datasets/random_sample_initial_model_data_icelandic_nanoset
+      - processed_datasets/random_sample_code_icelandic_nanoset
+      dataset_max_tokens: null
+      dataset_num_samples:
+      - 2100119
+      - 36510
+      - 4155
+      dataset_weights:
+      - 2100119.0
+      - 36510.0
+      - 4155.0
+      drop_last: false
+      pad_samples_to_global_batch_size: true
+      return_positions: true
+      shuffle_files: true
+      skip_in_stream: false
+      token_size_in_bytes: 4
+      tokenizer_name: meta-llama/Llama-3.3-70B-Instruct
+      use_old_brrr_dataloader: false
+      vocab_size: 128256
+    num_loading_workers: 0
+    seed: 10
+  name: fifth epoch
+  start_training_step: 1677
+- data:
+    dataset:
+      dataset_folder:
+      - processed_datasets/icelandic_nanoset_train_shuffled
+      - processed_datasets/random_sample_initial_model_data_icelandic_nanoset
+      - processed_datasets/random_sample_code_icelandic_nanoset
+      dataset_max_tokens: null
+      dataset_num_samples:
+      - 2100119
+      - 36510
+      - 4155
+      dataset_weights:
+      - 2100119.0
+      - 36510.0
+      - 4155.0
+      drop_last: false
+      pad_samples_to_global_batch_size: true
+      return_positions: true
+      shuffle_files: true
+      skip_in_stream: false
+      token_size_in_bytes: 4
+      tokenizer_name: meta-llama/Llama-3.3-70B-Instruct
+      use_old_brrr_dataloader: false
+      vocab_size: 128256
+    num_loading_workers: 0
+    seed: 903
+  name: sixth epoch
+  start_training_step: 2096
+general:
+  benchmark_csv_path: null
+  consumed_train_samples: null
+  ignore_sanity_checks: true
+  project: edulm_v2
+  run: HyperLlama-572M-icelandic-1x-cloned
+  seed: 42
+  step: null
+logging:
+  iteration_step_info_interval: 5
+  log_level: info
+  log_level_replica: info
+model:
+  ddp_bucket_cap_mb: 25
+  dtype: bfloat16
+  init_method:
+    embedding_dimension_cloning_factor: 2
+    path: checkpoints/HyperLlama-180M-english-1x/3572
+    up_projection_cloning_factor: 2
+  make_vocab_size_divisible_by: 1
+  model_config:
+    bos_token_id: 0
+    eos_token_id: 0
+    hidden_act: gelu
+    hidden_size: 1152
+    initializer_range: 0.041666666666666664
+    intermediate_size: 3072
+    is_llama_config: true
+    lm_head_normalization_factor: 2
+    max_position_embeddings: 2048
+    num_attention_heads: 18
+    num_hidden_layers: 30
+    num_key_value_heads: 6
+    pad_token_id: null
+    pretraining_tp: 1
+    rms_norm_eps: 1.0e-05
+    rope_interleaved: false
+    rope_scaling: null
+    rope_theta: 10000.0
+    tie_word_embeddings: true
+    use_cache: true
+    vocab_size: 128256
+optimizer:
+  accumulate_grad_in_fp32: true
+  clip_grad: 1.0
+  learning_rate_scheduler:
+    learning_rate: 0.003
+    lr_decay_starting_step: 2004
+    lr_decay_steps: 510
+    lr_decay_style: linear
+    lr_warmup_steps: 10
+    lr_warmup_style: linear
+    min_decay_lr: 0
+  optimizer_factory:
+    adam_beta1: 0.9
+    adam_beta2: 0.95
+    adam_eps: 1.0e-08
+    name: adamW
+    torch_adam_is_fused: true
+  weight_decay: 0.01
+  zero_stage: 0
+parallelism:
+  dp: 16
+  expert_parallel_size: 1
+  pp: 1
+  pp_engine: 1f1b
+  recompute_layer: false
+  tp: 1
+  tp_linear_async_communication: true
+  tp_mode: REDUCE_SCATTER
+  tp_recompute_allgather: true
+profiler: null
+tokenizer:
+  tokenizer_max_length: null
+  tokenizer_name_or_path: meta-llama/Llama-3.3-70B-Instruct
+  tokenizer_revision: null
+tokens:
+  batch_accumulation_per_replica: 80
+  limit_test_batches: 0
+  limit_val_batches: 0
+  micro_batch_size: 4
+  sequence_length: 2048
+  train_steps: 2514
+  val_check_interval: 250
