@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: If you use our work, please cite the article from preferred-citation.
+authors:
+  - given-names: Kevin
+    family-names: Glocker
+    orcid: https://orcid.org/0009-0001-9364-0298
+  - given-names: Kätriin
+    family-names: Kukk
+    orcid: https://orcid.org/0009-0006-7455-282X
+  - given-names: Romina
+    family-names: Oji
+    orcid: https://orcid.org/0000-0003-4102-7800
+  - given-names: Marcel
+    family-names: Bollmann
+    orcid: https://orcid.org/0000-0003-2598-8150
+  - given-names: Marco
+    family-names: Kuhlmann
+    orcid: https://orcid.org/0000-0002-2492-9872
+  - given-names: Jenny
+    family-names: Kunz
+    orcid: https://orcid.org/0009-0006-1001-0546
+title: 'Multilingual Scaling'
+version: 1.0.0
+url: https://github.com/liu-nlp/multilingual-scaling.git
+license: Apache-2.0
+date-released: '2025-12-11'
+preferred-citation:
+  authors:
+    - given-names: Kevin
+      family-names: Glocker
+      orcid: https://orcid.org/0009-0001-9364-0298
+    - given-names: Kätriin
+      family-names: Kukk
+      orcid: https://orcid.org/0009-0006-7455-282X
+    - given-names: Romina
+      family-names: Oji
+      orcid: https://orcid.org/0000-0003-4102-7800
+    - given-names: Marcel
+      family-names: Bollmann
+      orcid: https://orcid.org/0000-0003-2598-8150
+    - given-names: Marco
+      family-names: Kuhlmann
+      orcid: https://orcid.org/0000-0002-2492-9872
+    - given-names: Jenny
+      family-names: Kunz
+      orcid: https://orcid.org/0009-0006-1001-0546
+  title: 'Grow Up and Merge: Scaling Strategies for Efficient Language Adaptation'
+  url: https://arxiv.org/abs/2512.10772
+  type: generic
+  year: '2025'
