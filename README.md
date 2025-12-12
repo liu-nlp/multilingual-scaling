@@ -33,4 +33,14 @@ The BLiMP evaluation dataset is available at  [liu-nlp/blimp-single-error](https
 
 # Citation
 
-**TODO**
+```bibtex
+  @misc{glocker2025growmergescalingstrategies,
+        title={Grow Up and Merge: Scaling Strategies for Efficient Language Adaptation}, 
+        author={Kevin Glocker and Kätriin Kukk and Romina Oji and Marcel Bollmann and Marco Kuhlmann and Jenny Kunz},
+        year={2025},
+        eprint={2512.10772},
+        archivePrefix={arXiv},
+        primaryClass={cs.CL},
+        url={https://arxiv.org/abs/2512.10772}, 
+  }
+```
