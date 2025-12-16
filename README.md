@@ -20,6 +20,15 @@ All checkpoints trained for our experiments can be found in the [Grow Up and Mer
 Our (continued) pre-training experiments were performed using our modified version of the [Nanotron framework](https://github.com/liu-nlp/nanotron). The configuration files can be found in the [`training_configs`](/training_configs) directory.
 
 ### Training Data
+We used fineweb-edu-dedup and python-edu from the [SmolLM-Corpus](https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus) as English and Code data. The English data was split into subsets of 80% and 20% using [train_test_split()](https://huggingface.co/docs/datasets/v4.4.1/en/package_reference/main_classes#datasets.Dataset.train_test_split) from the datasets library.
+
+The UUIDs for the two English splits are available [here](https://huggingface.co/datasets/liu-nlp/fineweb-data-80-20-split-indices).
+
+We used [FineWeb2](https://huggingface.co/datasets/HuggingFaceFW/fineweb-2) for target-language data and shuffled the data for Estonian, Faroese, Icelandic and Persian using [shuffle()](https://huggingface.co/docs/datasets/v4.4.1/en/package_reference/main_classes#datasets.Dataset.shuffle) from the datasets library.
+
+As replay data for Swedish (the target language with the largest amount of available data), we randomly sampled 1% of the 80% English split and 5% of the Code data. Replay data for the other target languages was sampled from the replay data used for Swedish (English and Code sampled separately), scaled down linearly depending on the amount of training documents for each target language. For Persian we thus sampled 99%, for Estonian 17%, for Icelandic 5% and for Faroese 1% of the replay data used for Swedish. All sampling was done using [train_test_split()](https://huggingface.co/docs/datasets/v4.4.1/en/package_reference/main_classes#datasets.Dataset.train_test_split) from the datasets library.
+
+We used the [preprocessing script from Nanotron](https://github.com/liu-nlp/nanotron/blob/main/tools/preprocess_data.py) to convert the pre-training data to Nanoset format for training.
 
 We computed the proportions of languages in our multilingual pre-training data mixture using our implementation of [UniMax sampling](https://arxiv.org/abs/2304.09151) which can be found [here](https://github.com/kgnlp/unimax).
 
