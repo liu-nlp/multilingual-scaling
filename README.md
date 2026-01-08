@@ -30,7 +30,7 @@ As replay data for Swedish (the target language with the largest amount of avail
 
 We used the [preprocessing script from Nanotron](https://github.com/liu-nlp/nanotron/blob/main/tools/preprocess_data.py) to convert the pre-training data to Nanoset format for training.
 
-We computed the proportions of languages in our multilingual pre-training data mixture using our implementation of [UniMax sampling](https://arxiv.org/abs/2304.09151) which can be found [here](https://github.com/kgnlp/unimax).
+We computed the amount of training data for each language using our implementation of [UniMax sampling](https://arxiv.org/abs/2304.09151) which can be found [here](https://github.com/kgnlp/unimax). Based on that, we set the UniMax character budget to 617.5 billion and the maximum number of epochs to 6. We continue pretraining our models for 1 epoch on Swedish and Persian, 6 epochs on Faroese and Icelandic, and approximately 4.45 epochs on Estonian.
 
 ## Merging
 
